@@ -1,0 +1,27 @@
+{
+  "id": "DE002",
+  "title": "PowerShell encoded command switch",
+  "status": "experimental",
+  "severity": "medium",
+  "attack": [
+    "T1059.001"
+  ],
+  "equals": {
+    "channel": "Security",
+    "provider": "Microsoft-Windows-Security-Auditing",
+    "event_id": 4688
+  },
+  "regex": {
+    "process_path": "(?i)(?:^|[\\\\/])(?:powershell|pwsh)\\.exe$",
+    "command_line": "(?i)(?:^|\\s)-(?:enc|encodedcommand)(?=\\s|$)"
+  },
+  "attack_metadata": {
+    "technique_name": "PowerShell",
+    "tactics": [
+      "Execution"
+    ],
+    "url": "https://attack.mitre.org/techniques/T1059/001/",
+    "reviewed_on": "2026-11-16",
+    "coverage": "partial"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "DE003",
+  "title": "Security audit log cleared",
+  "status": "experimental",
+  "severity": "high",
+  "attack": [
+    "T1685.005"
+  ],
+  "equals": {
+    "channel": "Security",
+    "provider": "Microsoft-Windows-Eventlog",
+    "event_id": 1102
+  },
+  "attack_metadata": {
+    "technique_name": "Clear Windows Event Logs",
+    "tactics": [
+      "Defense Impairment"
+    ],
+    "url": "https://attack.mitre.org/techniques/T1685/005/",
+    "reviewed_on": "2026-11-16",
+    "coverage": "partial"
+  }
+}

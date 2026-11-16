@@ -1,0 +1,25 @@
+{
+  "id": "DE005",
+  "title": "Member added to built-in Administrators",
+  "status": "experimental",
+  "severity": "high",
+  "attack": [
+    "T1098.007"
+  ],
+  "equals": {
+    "channel": "Security",
+    "provider": "Microsoft-Windows-Security-Auditing",
+    "event_id": 4732,
+    "group_sid": "S-1-5-32-544"
+  },
+  "attack_metadata": {
+    "technique_name": "Additional Local or Domain Groups",
+    "tactics": [
+      "Persistence",
+      "Privilege Escalation"
+    ],
+    "url": "https://attack.mitre.org/techniques/T1098/007/",
+    "reviewed_on": "2026-11-16",
+    "coverage": "partial"
+  }
+}

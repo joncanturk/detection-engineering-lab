@@ -1,0 +1,1196 @@
+[
+  {
+    "name": "DE001 five failures inside window",
+    "events": [
+      {
+        "record_id": "1",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "2",
+        "timestamp": "2026-01-01T00:01:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "3",
+        "timestamp": "2026-01-01T00:02:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "4",
+        "timestamp": "2026-01-01T00:03:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "5",
+        "timestamp": "2026-01-01T00:04:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      }
+    ],
+    "expected_rule_ids": [
+      "DE001"
+    ]
+  },
+  {
+    "name": "DE001 four failures below threshold",
+    "events": [
+      {
+        "record_id": "6",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "7",
+        "timestamp": "2026-01-01T00:01:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "8",
+        "timestamp": "2026-01-01T00:02:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "9",
+        "timestamp": "2026-01-01T00:03:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE001 inclusive boundary",
+    "events": [
+      {
+        "record_id": "10",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "11",
+        "timestamp": "2026-01-01T00:01:15Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "12",
+        "timestamp": "2026-01-01T00:02:30Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "13",
+        "timestamp": "2026-01-01T00:03:45Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "14",
+        "timestamp": "2026-01-01T00:05:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      }
+    ],
+    "expected_rule_ids": [
+      "DE001"
+    ]
+  },
+  {
+    "name": "DE001 outside boundary",
+    "events": [
+      {
+        "record_id": "15",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "16",
+        "timestamp": "2026-01-01T00:01:15Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "17",
+        "timestamp": "2026-01-01T00:02:30Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "18",
+        "timestamp": "2026-01-01T00:03:45Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "19",
+        "timestamp": "2026-01-01T00:05:01Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE001 sustained burst deduplicates",
+    "events": [
+      {
+        "record_id": "20",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "21",
+        "timestamp": "2026-01-01T00:00:01Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "22",
+        "timestamp": "2026-01-01T00:00:02Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "23",
+        "timestamp": "2026-01-01T00:00:03Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "24",
+        "timestamp": "2026-01-01T00:00:04Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "25",
+        "timestamp": "2026-01-01T00:00:05Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "26",
+        "timestamp": "2026-01-01T00:00:06Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "27",
+        "timestamp": "2026-01-01T00:00:07Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "28",
+        "timestamp": "2026-01-01T00:00:08Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "29",
+        "timestamp": "2026-01-01T00:00:09Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      }
+    ],
+    "expected_rule_ids": [
+      "DE001"
+    ]
+  },
+  {
+    "name": "DE001 rearm after quiet period",
+    "events": [
+      {
+        "record_id": "30",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "31",
+        "timestamp": "2026-01-01T00:00:01Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "32",
+        "timestamp": "2026-01-01T00:00:02Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "33",
+        "timestamp": "2026-01-01T00:00:03Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "34",
+        "timestamp": "2026-01-01T00:00:04Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "35",
+        "timestamp": "2026-01-01T00:15:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "36",
+        "timestamp": "2026-01-01T00:15:01Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "37",
+        "timestamp": "2026-01-01T00:15:02Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "38",
+        "timestamp": "2026-01-01T00:15:03Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "39",
+        "timestamp": "2026-01-01T00:15:04Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      }
+    ],
+    "expected_rule_ids": [
+      "DE001",
+      "DE001"
+    ]
+  },
+  {
+    "name": "DE001 separate host",
+    "events": [
+      {
+        "record_id": "40",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "41",
+        "timestamp": "2026-01-01T00:00:01Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "42",
+        "timestamp": "2026-01-01T00:00:02Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "43",
+        "timestamp": "2026-01-01T00:00:03Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "44",
+        "timestamp": "2026-01-01T00:00:04Z",
+        "host": "LAB-WS02",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE001 separate target_user",
+    "events": [
+      {
+        "record_id": "45",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "46",
+        "timestamp": "2026-01-01T00:00:01Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "47",
+        "timestamp": "2026-01-01T00:00:02Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "48",
+        "timestamp": "2026-01-01T00:00:03Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "49",
+        "timestamp": "2026-01-01T00:00:04Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "other",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE001 separate target_domain",
+    "events": [
+      {
+        "record_id": "50",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "51",
+        "timestamp": "2026-01-01T00:00:01Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "52",
+        "timestamp": "2026-01-01T00:00:02Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "53",
+        "timestamp": "2026-01-01T00:00:03Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "54",
+        "timestamp": "2026-01-01T00:00:04Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "OTHER",
+        "source_ip": "192.0.2.10"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE001 separate source_ip",
+    "events": [
+      {
+        "record_id": "55",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "56",
+        "timestamp": "2026-01-01T00:00:01Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "57",
+        "timestamp": "2026-01-01T00:00:02Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "58",
+        "timestamp": "2026-01-01T00:00:03Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "59",
+        "timestamp": "2026-01-01T00:00:04Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.11"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE001 missing target_user",
+    "events": [
+      {
+        "record_id": "60",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "61",
+        "timestamp": "2026-01-01T00:00:01Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "62",
+        "timestamp": "2026-01-01T00:00:02Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "63",
+        "timestamp": "2026-01-01T00:00:03Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "64",
+        "timestamp": "2026-01-01T00:00:04Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_domain": "LAB",
+        "source_ip": "192.0.2.10"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE001 missing target_domain",
+    "events": [
+      {
+        "record_id": "65",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "66",
+        "timestamp": "2026-01-01T00:00:01Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "67",
+        "timestamp": "2026-01-01T00:00:02Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "68",
+        "timestamp": "2026-01-01T00:00:03Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "source_ip": "192.0.2.10"
+      },
+      {
+        "record_id": "69",
+        "timestamp": "2026-01-01T00:00:04Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "source_ip": "192.0.2.10"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE001 missing source_ip",
+    "events": [
+      {
+        "record_id": "70",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB"
+      },
+      {
+        "record_id": "71",
+        "timestamp": "2026-01-01T00:00:01Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB"
+      },
+      {
+        "record_id": "72",
+        "timestamp": "2026-01-01T00:00:02Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB"
+      },
+      {
+        "record_id": "73",
+        "timestamp": "2026-01-01T00:00:03Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB"
+      },
+      {
+        "record_id": "74",
+        "timestamp": "2026-01-01T00:00:04Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4625,
+        "target_user": "analyst",
+        "target_domain": "LAB"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE002 encoded switch",
+    "events": [
+      {
+        "record_id": "75",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4688,
+        "process_path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "command_line": "powershell.exe -enc VwByAGkAdABlAC0ATwB1AHQAcAB1AHQAIAAxAA=="
+      }
+    ],
+    "expected_rule_ids": [
+      "DE002"
+    ]
+  },
+  {
+    "name": "DE002 mixed case pwsh",
+    "events": [
+      {
+        "record_id": "76",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4688,
+        "process_path": "C:\\Program Files\\PowerShell\\7\\PWSH.EXE",
+        "command_line": "pwsh.exe -EnCoDeDcOmMaNd AAAA"
+      }
+    ],
+    "expected_rule_ids": [
+      "DE002"
+    ]
+  },
+  {
+    "name": "DE002 plain command",
+    "events": [
+      {
+        "record_id": "77",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4688,
+        "process_path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "command_line": "powershell.exe -Command Get-Date"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE002 unrelated executable",
+    "events": [
+      {
+        "record_id": "78",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4688,
+        "process_path": "C:\\tools\\echo.exe",
+        "command_line": "echo.exe -enc AAAA"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE002 switch prefix is not a match",
+    "events": [
+      {
+        "record_id": "79",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4688,
+        "process_path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "command_line": "powershell.exe -encoding utf8"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE002 missing command line",
+    "events": [
+      {
+        "record_id": "80",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4688,
+        "process_path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE003 security log clear",
+    "events": [
+      {
+        "record_id": "81",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Eventlog",
+        "event_id": 1102,
+        "actor": "LAB\\operator"
+      }
+    ],
+    "expected_rule_ids": [
+      "DE003"
+    ]
+  },
+  {
+    "name": "DE003 wrong provider",
+    "events": [
+      {
+        "record_id": "82",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 1102
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE003 other channel",
+    "events": [
+      {
+        "record_id": "83",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Application",
+        "provider": "Microsoft-Windows-Eventlog",
+        "event_id": 1102
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE004 local account",
+    "events": [
+      {
+        "record_id": "84",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4720,
+        "account_scope": "local",
+        "target_user": "lab-support"
+      }
+    ],
+    "expected_rule_ids": [
+      "DE004"
+    ]
+  },
+  {
+    "name": "DE004 domain account",
+    "events": [
+      {
+        "record_id": "85",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4720,
+        "account_scope": "domain"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE004 unknown scope",
+    "events": [
+      {
+        "record_id": "86",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4720
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE005 administrators SID",
+    "events": [
+      {
+        "record_id": "87",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4732,
+        "group_sid": "S-1-5-32-544",
+        "member_sid": "S-1-5-21-100-200-300-1001"
+      }
+    ],
+    "expected_rule_ids": [
+      "DE005"
+    ]
+  },
+  {
+    "name": "DE005 localized name irrelevant",
+    "events": [
+      {
+        "record_id": "88",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4732,
+        "group_sid": "S-1-5-32-544",
+        "group_name": "Administratoren"
+      }
+    ],
+    "expected_rule_ids": [
+      "DE005"
+    ]
+  },
+  {
+    "name": "DE005 ordinary users group",
+    "events": [
+      {
+        "record_id": "89",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4732,
+        "group_sid": "S-1-5-32-545"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "DE005 missing SID",
+    "events": [
+      {
+        "record_id": "90",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4732,
+        "group_name": "Administrators"
+      }
+    ],
+    "expected_rule_ids": []
+  },
+  {
+    "name": "benign approved admin change still alerts",
+    "events": [
+      {
+        "record_id": "91",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4732,
+        "group_sid": "S-1-5-32-544",
+        "change_ticket": "LAB-123"
+      }
+    ],
+    "expected_rule_ids": [
+      "DE005"
+    ]
+  },
+  {
+    "name": "benign approved account creation still alerts",
+    "events": [
+      {
+        "record_id": "92",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4720,
+        "account_scope": "local",
+        "change_ticket": "LAB-124"
+      }
+    ],
+    "expected_rule_ids": [
+      "DE004"
+    ]
+  },
+  {
+    "name": "benign logon success",
+    "events": [
+      {
+        "record_id": "93",
+        "timestamp": "2026-01-01T00:00:00Z",
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "provider": "Microsoft-Windows-Security-Auditing",
+        "event_id": 4624,
+        "target_user": "analyst"
+      }
+    ],
+    "expected_rule_ids": []
+  }
+]

@@ -1,0 +1,107 @@
+[
+  {
+    "rule_id": "DE001",
+    "title": "Repeated failed logons",
+    "severity": "medium",
+    "attack": [
+      "T1110.001"
+    ],
+    "timestamp": "2026-01-01T00:02:40Z",
+    "host": "LAB-WS01",
+    "evidence": [
+      {
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "record_id": "94"
+      },
+      {
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "record_id": "95"
+      },
+      {
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "record_id": "96"
+      },
+      {
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "record_id": "97"
+      },
+      {
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "record_id": "98"
+      }
+    ]
+  },
+  {
+    "rule_id": "DE002",
+    "title": "PowerShell encoded command switch",
+    "severity": "medium",
+    "attack": [
+      "T1059.001"
+    ],
+    "timestamp": "2026-01-01T00:03:20Z",
+    "host": "LAB-WS01",
+    "evidence": [
+      {
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "record_id": "99"
+      }
+    ]
+  },
+  {
+    "rule_id": "DE004",
+    "title": "Local user account created",
+    "severity": "low",
+    "attack": [
+      "T1136.001"
+    ],
+    "timestamp": "2026-01-01T00:04:00Z",
+    "host": "LAB-WS01",
+    "evidence": [
+      {
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "record_id": "100"
+      }
+    ]
+  },
+  {
+    "rule_id": "DE005",
+    "title": "Member added to built-in Administrators",
+    "severity": "high",
+    "attack": [
+      "T1098.007"
+    ],
+    "timestamp": "2026-01-01T00:04:40Z",
+    "host": "LAB-WS01",
+    "evidence": [
+      {
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "record_id": "101"
+      }
+    ]
+  },
+  {
+    "rule_id": "DE003",
+    "title": "Security audit log cleared",
+    "severity": "high",
+    "attack": [
+      "T1685.005"
+    ],
+    "timestamp": "2026-01-01T00:05:20Z",
+    "host": "LAB-WS01",
+    "evidence": [
+      {
+        "host": "LAB-WS01",
+        "channel": "Security",
+        "record_id": "102"
+      }
+    ]
+  }
+]

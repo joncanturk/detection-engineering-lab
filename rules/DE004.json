@@ -1,0 +1,24 @@
+{
+  "id": "DE004",
+  "title": "Local user account created",
+  "status": "experimental",
+  "severity": "low",
+  "attack": [
+    "T1136.001"
+  ],
+  "equals": {
+    "channel": "Security",
+    "provider": "Microsoft-Windows-Security-Auditing",
+    "event_id": 4720,
+    "account_scope": "local"
+  },
+  "attack_metadata": {
+    "technique_name": "Local Account",
+    "tactics": [
+      "Persistence"
+    ],
+    "url": "https://attack.mitre.org/techniques/T1136/001/",
+    "reviewed_on": "2026-11-16",
+    "coverage": "partial"
+  }
+}

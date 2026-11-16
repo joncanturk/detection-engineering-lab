@@ -1,0 +1,38 @@
+{
+  "id": "DE001",
+  "title": "Repeated failed logons",
+  "status": "experimental",
+  "severity": "medium",
+  "attack": [
+    "T1110.001"
+  ],
+  "equals": {
+    "channel": "Security",
+    "provider": "Microsoft-Windows-Security-Auditing",
+    "event_id": 4625
+  },
+  "required": [
+    "target_user",
+    "target_domain",
+    "source_ip"
+  ],
+  "threshold": {
+    "count": 5,
+    "seconds": 300,
+    "group_by": [
+      "host",
+      "target_domain",
+      "target_user",
+      "source_ip"
+    ]
+  },
+  "attack_metadata": {
+    "technique_name": "Password Guessing",
+    "tactics": [
+      "Credential Access"
+    ],
+    "url": "https://attack.mitre.org/techniques/T1110/001/",
+    "reviewed_on": "2026-11-16",
+    "coverage": "partial"
+  }
+}
